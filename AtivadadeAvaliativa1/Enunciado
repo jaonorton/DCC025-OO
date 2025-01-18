@@ -1,0 +1,28 @@
+Sistema para Carteira de Investimentos
+
+Crie um programa para um sistema de carteira de investimentos que gerencia diferentes tipos de carteiras, que podem ser de Bolsa de Valores ou de Investimentos.
+
+Crie uma classe abstrata chamada CarteiraInvestimento com campos para número da carteira e saldo, com métodos para investir e resgatar.
+
+Na classe BolsaValores, o método investir() permite adicionar valor ao saldo,  mas cobra uma taxa fixa de R$ 50,00 a cada investimento, descontada diretamente do saldo. O método resgatar() permite retiradas, sem cobrança de taxas, verificando se existe saldo para isso.
+
+Na classe Investimento, o método investir() também permite adicionar valor ao saldo, mas não cobra nenhuma taxa. Já o método resgatar(), que permite retiradas, cobra uma taxa de 1% do valor resgatado, além de também verificar se existe saldo para essa operação.
+
+Construir os casos de teste para todas as situações implementadas.
+ 
+ATENÇÃO: esse enunciado é um ponto de partida. Serão valorizados acréscimos feitos ao mesmo.
+
+
+<properties>
+<maven.compiler.source>8</maven.compiler.source>
+<maven.compiler.target>8</maven.compiler.target>
+</properties>
+
+<dependencies>
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-engine</artifactId>
+<version>5.5.2</version>
+<scope>test</scope>
+</dependency>
+</dependencies>
